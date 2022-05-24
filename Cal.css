@@ -1,0 +1,76 @@
+.CalSpace{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.head{
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    transform: translate(-50%,10%);
+    color: #dd2d4a;
+    background-color: rgb(230, 228, 228);
+    width: 360px;
+    height: 40px;
+    border-radius: 8px;
+    align-items: center;
+    text-align: center;
+  }
+  
+.Container{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    width: 250px;
+    border: solid 4px rgb(8, 8, 8) ;
+    border-radius: 4px;
+    background:rgb(8, 8, 8) ;
+
+}
+
+.Keybord{
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    grid-auto-rows: minmax(60px,auto);
+}
+
+input[type="text"]{
+width: 239px;
+height: 65px;
+background-color:rgb(8, 8, 8) ;
+border: 0;
+color: rgb(231, 237, 241);
+text-align: right;
+font-size: 24px;
+padding-left: 4px;
+padding-right: 4px;
+}
+
+#clear{
+    grid-column: 1/3;
+    color: antiquewhite;
+}
+
+#result{
+    grid-column: 3/5;
+    grid-row: 5;
+    color: antiquewhite;
+}
+
+button{
+    margin: 4px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    background-color:rgb(55, 55, 61)  ;
+    color: azure;
+}
+
+.light{
+    background: #dd2d4a;
+    
+}
